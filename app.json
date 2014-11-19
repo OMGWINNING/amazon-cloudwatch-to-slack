@@ -10,8 +10,8 @@
             "description": "Name of your Slack team",
             "required": true
         },
-        "SLACK_TOKEN": {
-            "description": "Secret Slack token",
+        "SLACK_WEBHOOK_URL": {
+            "description": "Secret Slack Webhook Url",
             "required": true
         },
         "SLACK_CHANNEL": {

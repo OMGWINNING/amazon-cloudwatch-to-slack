@@ -12,7 +12,7 @@ Setup
 Requirements:
 * A [Heroku](http://heroku.com) account.
 * A [Slack](http://slack.com) Account.
-* A Slack [Incoming Webhook Token](https://slack.com/services/new/incoming-webhook) configured to post messages to the room you want.
+* A Slack [Incoming Webhook Url](https://slack.com/services/new/incoming-webhook) configured to post messages to the room you want.
 * An Amazon AWS account with [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) and [Amazon SNS](https://aws.amazon.com/sns/) setup and enabled.
 
 Deploy your application to to Heroku:
@@ -23,7 +23,7 @@ git clone https://github.com/esanchezm/amazon-cloudwatch-to-slack.git
 cd amazon-cloudwatch-to-slack
 heroku apps:create
 heroku config:set SLACK_COMPANY_NAME=yourcompany \
-                  SLACK_TOKEN=12345 \
+                  SLACK_WEBHOOK_URL=12345 \
 git push heroku master
 ```
 
